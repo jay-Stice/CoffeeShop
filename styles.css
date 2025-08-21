@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+.addEffect{
+    position: relative;
+}
+.addEffect::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, black, transparent);
+
+}
+.addEffect::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, black, transparent);
+
+}
+.right-border{
+position: relative;
+}
+.right-border::before{
+    content: " ";
+    position: absolute;
+    right: -11px;
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, black, transparent);
+}
+
+
+
+@media screen and (max-width:468px) {
+    .one{
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        margin: 20px 20px;
+    }
+}
